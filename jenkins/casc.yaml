@@ -1,0 +1,17 @@
+
+jenkins:
+  systemMessage: "Jenkins CI Demo (auto-configured via JCasC)"
+  numExecutors: 2
+  mode: NORMAL
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "admin"
+          password: "admin123"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: true
+unclassified:
+  location:
+    url: "http://localhost:8080/"
